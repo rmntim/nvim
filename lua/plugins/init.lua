@@ -1,0 +1,91 @@
+return {
+  {
+    "metalelf0/jellybeans-nvim",
+    dependencies = { "rktjmp/lush.nvim" },
+  },
+
+  {
+    "stevearc/conform.nvim",
+    event = "BufWritePre",
+    config = function()
+      require "configs.conform"
+    end,
+  },
+
+  {
+    "neovim/nvim-lspconfig",
+    config = function()
+      require("nvchad.configs.lspconfig").defaults()
+      require "configs.lspconfig"
+    end,
+  },
+
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "lua-language-server",
+        "stylua",
+        "selene",
+
+        "typescript-language-server",
+        "biome",
+
+        "gopls",
+        "golangci-lint",
+
+        "clangd",
+        "cpplint",
+      },
+    },
+  },
+
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "vim",
+        "lua",
+        "vimdoc",
+
+        "html",
+        "css",
+
+        "c",
+        "cpp",
+        "go",
+        "cmake",
+        "make",
+
+        "json",
+        "jsonc",
+        "yaml",
+        "xml",
+      },
+    },
+  },
+
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    event = "BufEnter",
+    opts = {},
+  },
+
+  {
+    "kdheepak/lazygit.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    keys = {
+      { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
+    },
+  },
+
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = {
+      view = {
+        side = "right",
+      },
+    },
+  },
+}
