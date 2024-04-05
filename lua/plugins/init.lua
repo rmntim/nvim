@@ -26,16 +26,17 @@ return {
       ensure_installed = {
         "lua-language-server",
         "stylua",
-        "selene",
 
         "typescript-language-server",
         "biome",
 
         "gopls",
-        "golangci-lint",
+        "pyright",
+        "ruff",
 
+        "asm-lsp",
         "clangd",
-        "cpplint",
+        "rust-analyzer",
       },
     },
   },
@@ -45,22 +46,32 @@ return {
     opts = {
       ensure_installed = {
         "vim",
-        "lua",
         "vimdoc",
+        "lua",
+        "luadoc",
 
         "html",
         "css",
-
-        "c",
-        "cpp",
-        "go",
-        "cmake",
-        "make",
-
+        "javascript",
+        "jsdoc",
+        "typescript",
+        "tsx",
         "json",
         "jsonc",
+
+        "go",
+        "python",
         "yaml",
+        "toml",
         "xml",
+
+        "asm",
+        "nasm",
+        "c",
+        "cpp",
+        "cmake",
+        "make",
+        "rust",
       },
     },
   },
