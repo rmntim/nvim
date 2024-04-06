@@ -17,6 +17,7 @@ local servers = {
   "asm_lsp",
   "clangd",
   "rust_analyzer",
+  "zls",
 }
 
 -- lsps with default config
