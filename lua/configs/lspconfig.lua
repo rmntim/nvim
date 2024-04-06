@@ -14,7 +14,6 @@ local servers = {
   "pyright",
   "ruff",
 
-  "asm_lsp",
   "clangd",
   "rust_analyzer",
   "zls",

@@ -9,6 +9,6 @@ My NVChad-**based** configuration for web and low-level development in NeoVim.
 - js/ts
 - go
 - python
-- asm
 - c/c++
 - rust
+- zig

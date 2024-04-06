@@ -34,7 +34,6 @@ return {
         "pyright",
         "ruff",
 
-        "asm-lsp",
         "clangd",
         "rust-analyzer",
         "zls",
