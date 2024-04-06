@@ -36,7 +36,6 @@ return {
 
         "clangd",
         "rust-analyzer",
-        "zls",
       },
     },
   },
@@ -72,7 +71,6 @@ return {
         "cmake",
         "make",
         "rust",
-        "zig",
       },
     },
   },
