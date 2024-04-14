@@ -3,7 +3,6 @@ return {
     "metalelf0/jellybeans-nvim",
     dependencies = { "rktjmp/lush.nvim" },
   },
-
   {
     "stevearc/conform.nvim",
     event = "BufWritePre",
@@ -36,6 +35,7 @@ return {
 
         "clangd",
         "rust-analyzer",
+        "zls",
       },
     },
   },
@@ -60,6 +60,7 @@ return {
 
         "go",
         "python",
+        "sql",
         "yaml",
         "toml",
         "xml",
@@ -71,6 +72,7 @@ return {
         "cmake",
         "make",
         "rust",
+        "zig",
       },
     },
   },
