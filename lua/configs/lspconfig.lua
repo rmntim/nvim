@@ -10,13 +10,8 @@ local servers = {
   "tsserver",
 
   "gopls",
-
-  "pyright",
-  "ruff",
-
   "clangd",
   "rust_analyzer",
-  "zls",
 }
 
 -- lsps with default config
