@@ -9,6 +9,8 @@ local servers = {
 
   "tsserver",
 
+  "pyright",
+
   "gopls",
   "clangd",
   "rust_analyzer",

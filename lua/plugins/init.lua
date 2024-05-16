@@ -29,6 +29,9 @@ return {
         "typescript-language-server",
         "biome",
 
+        "pyright",
+        "black",
+
         "gopls",
         "rust-analyzer",
         "clangd",
@@ -59,6 +62,8 @@ return {
         "yaml",
         "toml",
         "xml",
+
+        "python",
 
         "c",
         "cpp",
