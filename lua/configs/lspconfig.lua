@@ -14,6 +14,7 @@ local servers = {
   "gopls",
   "clangd",
   "rust_analyzer",
+  "zls",
 }
 
 -- lsps with default config
