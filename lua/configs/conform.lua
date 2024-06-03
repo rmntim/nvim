@@ -9,8 +9,6 @@ local options = {
     json = { "biome" },
 
     python = { "black" },
-
-    nim = { "nimpretty" },
   },
 
   format_on_save = {
