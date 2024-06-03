@@ -33,7 +33,6 @@ return {
         "black",
 
         "gopls",
-        "rust-analyzer",
         "clangd",
         "zls",
       },
@@ -65,11 +64,11 @@ return {
         "xml",
 
         "python",
+        "java",
 
         "c",
         "cpp",
         "cmake",
-        "rust",
         "zig",
       },
     },
