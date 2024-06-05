@@ -34,6 +34,7 @@ return {
 
         "gopls",
         "clangd",
+        "rust-analyzer",
         "zls",
       },
     },
@@ -70,6 +71,7 @@ return {
         "cpp",
         "cmake",
         "zig",
+        "rust",
       },
     },
   },
