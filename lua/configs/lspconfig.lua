@@ -10,9 +10,9 @@ local servers = {
   "pyright",
 
   "gopls",
+  "sourcekit",
   "rust_analyzer",
   "clangd",
-  "zls",
 }
 
 -- lsps with default config

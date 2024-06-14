@@ -35,7 +35,6 @@ return {
         "gopls",
         "clangd",
         "rust-analyzer",
-        "zls",
       },
     },
   },
@@ -64,13 +63,14 @@ return {
         "toml",
         "xml",
 
+        "swift",
+
         "python",
         "java",
 
         "c",
         "cpp",
         "cmake",
-        "zig",
         "rust",
       },
     },
