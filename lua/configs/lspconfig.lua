@@ -4,22 +4,31 @@ local on_init = require("nvchad.configs.lspconfig").on_init
 local capabilities = require("nvchad.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
-local servers = {
-  "lua_ls",
-  "tsserver",
-  "pyright",
 
-  "gopls",
-  "sourcekit",
-  "rust_analyzer",
-  "clangd",
+local servers = {
+  lua_ls = {},
+  tsserver = {},
+  pyright = {},
+  gopls = {},
+  sourcekit = {},
+  rust_analyzer = {},
+  clangd = {
+    cmd = {
+      "clangd",
+      "--clang-tidy",
+    },
+    filetypes = {
+      "c",
+      "cpp",
+      "cuda",
+      "proto",
+    },
+  },
 }
 
--- lsps with default config
-for _, lsp in ipairs(servers) do
-  lspconfig[lsp].setup {
-    on_attach = on_attach,
-    on_init = on_init,
-    capabilities = capabilities,
-  }
+for lsp, opts in pairs(servers) do
+  opts.on_attach = on_attach
+  opts.capabilities = capabilities
+  opts.on_init = on_init
+  lspconfig[lsp].setup(opts)
 end
