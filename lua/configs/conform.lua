@@ -8,7 +8,7 @@ local options = {
     typescript = { "biome" },
     json = { "biome" },
 
-    python = { "black" },
+    python = { "ruff_format", "ruff_organize_imports" },
   },
 
   format_on_save = {
