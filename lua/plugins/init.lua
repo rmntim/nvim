@@ -30,10 +30,13 @@ return {
         "biome",
 
         "pyright",
-        "black",
+        "ruff",
 
         "gopls",
+        "golangci-lint",
+
         "clangd",
+
         "rust-analyzer",
       },
     },
