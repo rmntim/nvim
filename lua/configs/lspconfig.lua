@@ -20,8 +20,6 @@ local servers = {
     filetypes = {
       "c",
       "cpp",
-      "cuda",
-      "proto",
     },
   },
 }
