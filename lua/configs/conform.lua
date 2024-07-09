@@ -8,6 +8,8 @@ local options = {
     typescript = { "biome" },
     json = { "biome" },
 
+    go = { "gofmt", "goimports" },
+
     python = { "ruff_format", "ruff_organize_imports" },
   },
 
