@@ -1,12 +1,17 @@
+local builtin = require("telescope.builtin")
 local which_key = require("which-key")
 
 local non_lsp_mappings = {
-    ["<leader>"] = {
-        e = { vim.cmd.Ex, "Open file explorer" },
-        p = { '"_dP', "Paste without overwrite" },
-        ["/"] = { "<Plug>(comment_toggle_linewise_current)", "Toggle comment" },
-        s = { [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], "Search and replace word under cursor" },
+    { "<leader>ff", builtin.find_files, desc = "Telescope find files" },
+    { "<leader>fg", builtin.live_grep, desc = "Telescope live grep" },
+    { "<leader>e", vim.cmd.Ex, desc = "Open file explorer" },
+    { "<leader>p", '"_dP', desc = "Paste without overwrite" },
+    { "<leader>/", "<Plug>(comment_toggle_linewise_current)", desc = "Toggle comment" },
+    {
+        "<leader>s",
+        [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+        desc = "Search and replace word under cursor",
     },
 }
 
-which_key.register(non_lsp_mappings)
+which_key.add(non_lsp_mappings)
