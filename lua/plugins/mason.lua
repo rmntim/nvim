@@ -1,7 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
--- Customize Mason plugins
-
 ---@type LazySpec
 return {
   -- use mason-lspconfig to configure LSP installations
@@ -10,7 +6,6 @@ return {
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
       ensure_installed = {
-        "lua_ls",
         -- add more arguments for adding more language servers
       },
     },
@@ -21,7 +16,7 @@ return {
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
       ensure_installed = {
-        "stylua",
+        "golangci-lint",
         -- add more arguments for adding more null-ls sources
       },
     },
@@ -31,7 +26,6 @@ return {
     -- overrides `require("mason-nvim-dap").setup(...)`
     opts = {
       ensure_installed = {
-        "python",
         -- add more arguments for adding more debuggers
       },
     },
